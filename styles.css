@@ -1,0 +1,67 @@
+html {
+    background-color: #e2ede5;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+#banner {
+    width: 300px;
+    margin-right: 24px;
+    border-radius: 2px;
+}
+
+#titleContainer {
+    display: flex;
+    align-items: center;
+    margin: 48px auto;
+    justify-content: center;
+}
+
+#title {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+}
+
+#date {
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 12px;
+}
+
+#demoItems, #mentionsItems {
+    max-width: 815px;
+    margin: 0 auto 48px;
+}
+
+.subtitle {
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+#demoItemsContent, #mentionItemsContent {
+    list-style: upper-roman;
+    margin-left: 20px;
+}
+
+#demoItemsContent li:not(:last-child), #mentionItemsContent li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+#demoItemsContent li a, #mentionItemsContent li a {
+    color: #333;
+    text-decoration: underline;
+    transition: color .3s;
+}
+
+#demoItemsContent li .externalSvg, #mentionItemsContent li .externalSvg {
+    width: 18px;
+    transition: stroke .3s;
+}
+
+#demoItemsContent li a:hover, #mentionItemsContent li a:hover{
+    color: rgb(120, 120, 120);
+}
+
+#demoItemsContent li a:hover .externalSvg, #mentionItemsContent li a:hover .externalSvg{
+    stroke: rgb(120, 120, 120);
+}
