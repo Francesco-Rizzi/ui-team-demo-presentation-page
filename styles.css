@@ -53,6 +53,12 @@ html {
     transition: color .3s;
 }
 
+#demoItemsContent li a svg, #mentionItemsContent li a svg {
+    margin-left: 2px;
+    position: relative;
+    top: 3px;
+}
+
 #demoItemsContent li .externalSvg, #mentionItemsContent li .externalSvg {
     width: 18px;
     transition: stroke .3s;

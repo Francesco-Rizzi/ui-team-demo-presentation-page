@@ -1,25 +1,3 @@
-const demoItems = [
-    {
-        title: "Demo Item #1",
-        url: "https://google.com"
-    },
-    {
-        title: "Demo Item #2",
-        url: ""
-    }
-];
-
-const mentionItems = [
-    {
-        title: "Mention Item #1",
-        url: "https://google.com"
-    },
-    {
-        title: "Mention Item #2",
-        url: ""
-    }
-];
-
 const demoContainer = document.getElementById('demoItemsContent');
 const mentionContainer = document.getElementById('mentionItemsContent');
 const date = document.getElementById('date');
@@ -29,7 +7,7 @@ const render = (items, container) => {
 
     const renderText = (item) => {
         if (item?.url?.length) {
-            return `<a target="_blank" href="${item.url}">${item.title} ${externalSvg}</a>`;
+            return `<a target="_blank" href="${item.url}">${item.title}${externalSvg}</a>`;
         }
         return item.title;
     }
