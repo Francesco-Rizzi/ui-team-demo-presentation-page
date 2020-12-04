@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
+        <link id="pyroFx" rel="stylesheet" href="pyro.css">
 
         <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -36,9 +37,17 @@
 
     <body>
 
-        <div id="content">
+        <div id="intro">It's already that moment of the sprint...</div>
+
+        <div id="content" class="pyro">
+
+            <div class="before"></div>
+            <div class="after"></div>
+
             <div id="titleContainer">
-                <img id="banner" src="banner.jpg"/>
+                <div id="banner">
+                    <img src="banner.jpg" />
+                </div>
                 <div id="titleText">
                     <h1 id="title">UI Demo Presentation</h1>
                     <div id="date"></div>
@@ -46,13 +55,15 @@
             </div>
 
             <div id="demoItems">
-                <h3 class="subtitle">In the demo:</h3>
+                <h3 class="subtitle">In today's demo:</h3>
                 <ul id="demoItemsContent"></ul>
             </div>
             
             <div id="mentionsItems">
-                <h3 class="subtitle">Other closed points:</h3>
-                <ul id="mentionItemsContent"></ul>
+                <div class="toEnter">
+                    <h3 class="subtitle">Other closed points:</h3>
+                    <ul id="mentionItemsContent"></ul>
+                </div>
             </div>
         </div>
 

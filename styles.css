@@ -8,6 +8,26 @@ html {
     width: 300px;
     margin-right: 24px;
     border-radius: 2px;
+    transform-origin: 50% 50%;
+    transform: scale(0, 0);
+    transition: transform 1s, opacity 1s;
+    background: #333;
+    opacity: 0;
+}
+
+#banner img {
+    width: 300px;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+#banner.entered {
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+#banner.entered.showText img {
+    opacity: 1;
 }
 
 #titleContainer {
@@ -29,13 +49,14 @@ html {
 }
 
 #demoItems, #mentionsItems {
-    max-width: 815px;
+    max-width: 812px;
     margin: 0 auto 48px;
 }
 
 .subtitle {
     margin-bottom: 24px;
     font-size: 24px;
+    line-height: 30px;
 }
 
 #demoItemsContent, #mentionItemsContent {
@@ -70,4 +91,113 @@ html {
 
 #demoItemsContent li a:hover .externalSvg, #mentionItemsContent li a:hover .externalSvg{
     stroke: rgb(120, 120, 120);
+}
+
+#intro {
+    background-color: white;
+    font-size: 64px;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    transition: top 1s ease-out;
+}
+
+#intro.fade {
+    top: -100vh;
+}
+
+#content {
+    position: relative;
+}
+
+.toEnter {
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s, filter 1s;
+    filter: blur(5px);
+}
+
+.entered {
+    opacity: 1;
+    filter: blur(0);
+}
+
+#title {
+    left: -341px;
+    position: relative;
+    background: #333;
+    transform: scale(.3, 1);
+    transition: left 1s, background-color 1s, transform 1s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#title.entered {
+    left: 0;
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+#title.entered.showText {
+    background: transparent;
+}
+
+#demoItems .subtitle {
+    display: inline-block;
+    top: -120px;
+    position: relative;
+    background: #333;
+    transform: scale(1, 3);
+    transition: top 1s, background-color 1s, transform 1s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#demoItems .subtitle.entered {
+    top: 0;
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+#demoItems .subtitle.entered.showText {
+    background: transparent;
+}
+
+#date {
+    display: inline-block;
+    padding-right: 5px;
+    top: -48px;
+    position: relative;
+    background: #333;
+    transform: scale(1, 2);
+    transition: top 1s, background-color 1s, transform 1s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#date.entered {
+    top: 0;
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+#date.entered.showText {
+    background: transparent;
+}
+
+.pyro .before, .pyro .after {
+    transition: filter 6s;
+    filter: blur(0);
+}
+
+.pyro .before.fade, .pyro .after.fade {
+    filter: blur(8px);
 }
