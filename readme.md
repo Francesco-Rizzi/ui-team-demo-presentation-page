@@ -9,6 +9,6 @@
 - Open the `index.html` file in a web browser;
 - **OR** install dependencies, run `npm run start` and go to `localhost:666`.
 
-### [Live Demo](https://frarizzi.science/experiments/ui-team-demo-presentation-template-page/)
+### [Live Demo](https://frarizzi.science/projects/ui-team-demo-presentation-template-page/)
 
 ![UI Demo Presentation logo](./assets/og.jpg?raw=true "UI Demo Presentation")
