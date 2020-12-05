@@ -6,8 +6,8 @@
 - Edit the file `config.js` adding your relevant data.
 
 ### How to run:
-- Open the index.html file in a web browser;
-- OR: install dependencies, run `npm run start` and go to `localhost:666`.
+- Open the `index.html` file in a web browser;
+- **OR** install dependencies, run `npm run start` and go to `localhost:666`.
 
 ### [Live Demo](https://frarizzi.science/experiments/ui-team-demo-presentation-template-page/)
 
