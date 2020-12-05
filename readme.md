@@ -11,4 +11,4 @@
 
 ### [Live Demo](https://frarizzi.science/experiments/ui-team-demo-presentation-template-page/)
 
-![UI Demo Presentation logo](assets/og.jpg?raw=true "UI Demo Presentation")
+![UI Demo Presentation logo](./assets/og.jpg?raw=true "UI Demo Presentation")
